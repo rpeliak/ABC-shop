@@ -1,0 +1,177 @@
+hidden {
+  display: none;
+}
+
+#calculator {
+  background-color: #F7F7F7;
+  padding-bottom: 110px;
+
+  h2 {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    padding-top: 87px;
+    padding-bottom: 52px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .calculator_data {
+      margin-right: 24px;
+
+      .calculator_form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        input {
+          width: 440px;
+          height: 40px;
+          border: 1px solid #07ACE6;
+          border-radius: 5px;
+          margin-bottom: 20px;
+
+          &::placeholder {
+            font-size: 13px;
+            font-family: "Open Sans", sans-serif;
+            color: #A5A5A5;
+            padding-left: 20px;
+          }
+        }
+
+        .calculator_list {
+          list-style: none;
+
+          #placeholder {
+            width: 440px;
+            height: 40px;
+            border: 1px solid #07ACE6;
+            border-radius: 5px;
+            font-size: 13px;
+            font-family: "Open Sans", sans-serif;
+            color: #A5A5A5;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            background-image: url("./images/ArrowDown.svg");
+            background-position: right;
+            background-repeat: no-repeat;
+
+            .calculator_list_in .hidden {
+              display: none;
+            }
+            .calculator_list_in {
+              list-style: none;
+              width: 440px;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              border: 1px solid #FB3B64;
+              border-radius: 5px;
+              padding: 10px 0 10px 20px;
+              background-color: white;
+              position: absolute;
+              top: 45px;
+              left: 0;
+              z-index: 1;
+
+              li {
+                margin: 10px 0;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .checkmarks {
+          display: flex;
+          flex-direction: column;
+          align-self: flex-start;
+
+          .check {
+            position: relative;
+            padding-left: 44px;
+            margin-top: 23px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #707070;
+
+            input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+
+              &:checked {
+                & ~ .checkmark {
+                  background-image: url("./images/Checkmark.svg");
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+
+                }
+              }
+            }
+
+            .checkmark {
+              position: absolute;
+              top: -5px;
+              left: 0;
+              height: 24px;
+              width: 24px;
+              background-color: white;
+              border: 1px solid #95989A;
+              border-radius: 5px;
+
+            }
+          }
+        }
+      }
+    }
+
+    .calculator_prices {
+      margin-left: 24px;
+
+
+      .calculator_prices_Tile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white;
+        width: 385px;
+        height: 31px;
+        background-color: #55DFB4;
+        margin: 4px 0;
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+
+      }
+
+      .sumDiv {
+        display: flex;
+        justify-content: flex-end;
+
+        .sum {
+          background-color: #08A6E4;
+          border-radius: 5px;
+          width: 180px;
+          height: 38px;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding-left: 15px;
+          padding-right: 20px;
+          color: white;
+          margin-top: 22px;
+        }
+      }
+    }
+  }
+}

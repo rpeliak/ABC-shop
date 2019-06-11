@@ -1,0 +1,132 @@
+#prices {
+  text-align: center;
+  margin-bottom: 180px;
+
+  .container {
+    width: 1266px;
+  }
+
+
+  h1 {
+    font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .prices_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .prices_smallBox {
+    width: 370px;
+    padding: 34px 0 80px 0;
+    border: 1px solid #FB3B64;
+    border-radius: 10px;
+
+    position: relative;
+
+    &:nth-of-type(3) {
+      border: 1px solid #55DFB4;
+
+      & > p {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+
+      .prices_content {
+        margin-top: 43px;
+
+        button {
+          background-color: #55DFB4;
+        }
+      }
+
+      & > span {
+        color: #55DFB4;
+      }
+    }
+
+    h2 {
+      font-size: 21px;
+      margin-bottom: 14px;
+    }
+
+    & > span {
+      font-size: 46px;
+      color: #FB3B64;
+      font-family: "Open Sans", sans-serif;;
+    }
+
+    .prices_content {
+      margin-top: 70px;
+
+      button {
+        background-color: #FB3B64;
+      }
+    }
+  }
+
+  .prices_bigBox {
+    border: 1px solid #07ACE6;
+    border-radius: 10px;
+    width: 400px;
+    padding: 34px 0 80px 0;
+    margin-left: 59px;
+    margin-right: 59px;
+    box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.16);
+    position: relative;
+
+
+    h2 {
+      font-size: 21px;
+      margin-bottom: 14px;
+    }
+
+    & > span {
+      font-size: 46px;
+      font-family: "Open Sans", sans-serif;
+      color: #07ACE6;
+    }
+
+    & > p {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 80px;
+      margin-top: 15px;
+    }
+  }
+
+  .prices_content {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      background-color: #07ACE6;
+    }
+
+
+    span {
+      margin: 11px 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  button {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: -50px;
+    left: 50%;
+  }
+}

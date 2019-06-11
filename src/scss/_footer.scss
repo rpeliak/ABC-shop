@@ -1,0 +1,36 @@
+#footer {
+
+  background-color: #F7F7F7;
+  box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.16);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer_container {
+    margin-top: 20px;
+    margin-bottom: 17px;
+
+    p {
+      font-family: Raleway, sans-serif;
+      font-size: 26px;
+      color: #07ACE6;
+    }
+
+    span {
+      font-size: 11px;
+      color: #A5A5A5;
+    }
+  }
+
+
+  .footer_icons {
+    display: flex;
+
+    img {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}

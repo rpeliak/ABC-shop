@@ -1,0 +1,18 @@
+@import "./mixinRWD";
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  @media screen and (min-width: 1354px) {
+    width: 1354px;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+
+
